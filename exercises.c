@@ -43,11 +43,10 @@ Al finalizar retorna la lista creada.
 
 List* crea_lista() {
    List* L = create_list();
-   L = (int*) malloc (sizeof(10)) ;
-   for(int i = 1 ; i < 11 ; i++)
-   {
-      int *dato = i ;
-      pushBack(L, dato) ;
+   for (int i = 1; i < 11; i++) {
+      int* dato = (int*) malloc(sizeof(int));  
+      *dato = i;  
+      pushBack(L, dato);
    }
    return L;
 }
@@ -120,7 +119,7 @@ paraéntesis balanceados. Retorna 1 si están balanceados,
 */
 
 int parentesisBalanceados(char *cadena) {
-   
+
    return 0;
 }
 

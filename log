@@ -19,3 +19,13 @@ exercises.c:82:22: error: invalid use of incomplete typedef 'List'
       |                      ^~
 Compilation failed
 06f26b9
+Sat, Mar 22, 2025  1:59:24 PM: 
+ exercises.c | 7 +++----
+ 1 file changed, 3 insertions(+), 4 deletions(-)
+In file included from test.c:5:
+exercises.c: In function 'eliminaElementos':
+exercises.c:81:22: error: invalid use of incomplete typedef 'List'
+   81 |    if (L == NULL || L->size == 0) return;
+      |                      ^~
+Compilation failed
+416f43f
