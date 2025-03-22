@@ -2,3 +2,20 @@ Sat, Mar 22, 2025 12:16:22 PM:
  tests:  0|5
 total_score: 0/70
 3f6cb15
+Sat, Mar 22, 2025  1:09:37 PM: 
+ exercises.c | 34 ++++++++++++++++++++++++++++++++++
+ 1 file changed, 34 insertions(+)
+In file included from test.c:5:
+exercises.c: In function 'crea_lista':
+exercises.c:46:6: error: assignment to 'List *' from incompatible pointer type 'int *' [-Wincompatible-pointer-types]
+   46 |    L = (int*) malloc (sizeof(10)) ;
+      |      ^
+exercises.c:49:19: error: initialization of 'int *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
+   49 |       int *dato = i ;
+      |                   ^
+exercises.c: In function 'eliminaElementos':
+exercises.c:82:22: error: invalid use of incomplete typedef 'List'
+   82 |    if (L == NULL || L->size == 0) return;
+      |                      ^~
+Compilation failed
+06f26b9
